@@ -42,7 +42,11 @@ class TestCalculadora(unittest.TestCase):
         """Testa se a função potencia está funcionando corretamente."""
         self.assertEqual(potencia(2, 3), 8)
         self.assertEqual(potencia(5, 0), 1)
-        self.assertEqual(potencia(10, 2), 100)
+        self.assertEqual(potencia(10, 1), 10)
+        self.assertEqual(potencia(0, 5), 0)
+        self.assertEqual(potencia(2, -1), 0.5)
+        self.assertEqual(potencia(-2, 2), 4)
+
     
     def test_calcular_media(self):
         """Testa se a função calcular_media está funcionando corretamente."""
