@@ -24,3 +24,10 @@ def potencia(a, b):
     """Retorna a potência de um número elevado a outro."""
     return a ** b
 
+
+def calcular_media(lista):
+    """Retorna a média de uma lista de números."""
+    if not lista:
+        return ValueError("A lista não pode ser vazia, bocó.")
+    return sum(lista) / len(lista)
+

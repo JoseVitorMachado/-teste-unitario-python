@@ -43,6 +43,13 @@ class TestCalculadora(unittest.TestCase):
         self.assertEqual(potencia(2, 3), 8)
         self.assertEqual(potencia(5, 0), 1)
         self.assertEqual(potencia(10, 2), 100)
+    
+    def test_calcular_media(self):
+        """Testa se a função calcular_media está funcionando corretamente."""
+        from calculadora import calcular_media
+        self.assertEqual(calcular_media([1, 2, 3, 4, 5]), 3)
+        self.assertEqual(calcular_media([10, 20, 30]), 20)
+        self.assertEqual(calcular_media([-1, -2, -3]), -2)
 
 if __name__ == "__main__":
     unittest.main()
